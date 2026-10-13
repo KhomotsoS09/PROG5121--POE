@@ -1,29 +1,38 @@
-#PROG5121 PoE - QuickChat Application
-### Student Details
-* **Student Name:** Khomotso Swafo
-* **Student Number:** ST10523846
-* **Module Code:** PROG5121 (Programming 1A)
+# PROG5121 POE - Khomotso Swafo ST10523846
 
----
+## Project Overview
+This repository contains both PROG5121 POE Part 1 and Part 2 in one repo as required by IIE.
 
-## Project Description
-This repository contains the Portfolio of Evidence (PoE) submission for Programming 1A. The project is a console-based application built using Java and managed via Maven. 
+Part 1: User Registration and Login validation
+Part 2: QuickChat Messaging Application
 
----
+## Part 1 - Registration Features (Login.java)
+- checkUserName: Validates underscore and <=5 chars
+- checkPasswordComplexity: 8 chars, capital, digit, special char
+- checkCellPhoneNumber: +27 format validation
+- registerUser, loginUser, returnLoginStatus
 
-## Progress Milestones
+## Part 2 - Messaging Features (Message.java & LoginApp.java)
+- Send Messages with recipient validation
+- Create MessageID (10 digits random)
+- Create MessageHash
+- Menu: 1) Send 2) Show messages 3) Quit
+- Store messages in array/JSON
 
-### Part 1 — Registration and Login Feature (Completed)
-* Enforces custom username format rules (must contain an underscore and be <= 5 characters long).
-* Enforces strict password complexity guidelines (minimum 8 characters, digit, uppercase, and special character).
-* Utilizes Regular Expressions (Regex) to validate South African cell phone numbers using international formats.
-* Verifies account credentials using safe console inputs via `Scanner`.
-* Includes comprehensive JUnit validation tests.
+## How to Run
+Run LoginApp.java
+Follow JOptionPane prompts:
+1. Register -> 2. Login -> 3. Messaging Menu
 
----
+## Testing
+JUnit tests in LoginTest.java - All tests passed for Part 1 validation.
 
-## How to Run the Application
-1. Clone the repository to your local machine.
-2. Open the project folder inside **NetBeans IDE**.
-3. Right-click the project root and select **Clean and Build**.
-4. Click **Run** to launch the interactive command-line workspace.
+## Repository Structure
+- Login.java
+- LoginApp.java
+- Message.java
+- README.md
+
+## Student
+Khomotso Swafo - ST10523846
+GitHub: KhomotsoS09
